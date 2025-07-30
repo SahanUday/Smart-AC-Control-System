@@ -2,6 +2,8 @@
 
 This folder contains the **AI-Powered AC Temperature Prediction System**, an intelligent air conditioning temperature optimization module that uses machine learning to predict optimal AC settings based on real-time environmental conditions, user feedback, and weather data.
 
+- 🔗 **Full Documentation**: [Main Repository](https://github.com/SahanUday/AI-Powered-AC-Temperature-Prediction-System)
+
 ---
 
 ## 📌 Overview
@@ -31,39 +33,6 @@ This AI model serves as the intelligent core for automated temperature control, 
 
 ---
 
-## 🔧 Technologies Used
-
-* **Python 3.10+** – Core programming language for AI implementation
-* **Joblib** – Machine learning model loading and deployment
-* **Pandas & NumPy** – Data manipulation and numerical processing
-* **Firebase Admin SDK** – Real-time database integration
-* **OpenWeather API** – External weather data integration
-* **Requests** – HTTP API communication
-* **Python-dotenv** – Secure environment variable management
-
----
-
-## 📊 Machine Learning Model
-
-### **Input Features:**
-- **Indoor Temperature** (°C) - Current room temperature from sensors
-- **Indoor Humidity** (%) - Current room humidity levels  
-- **Occupancy Status** - Room occupancy detection (0 or 1)
-- **Outdoor Temperature** (°C) - External weather conditions
-- **Outdoor Humidity** (%) - External humidity levels
-- **Weather Condition** - Weather type (Clear, Rain, Cloudy, etc.)
-- **Time of Day** - Hour of the day (0-23) for temporal patterns
-- **User Feedback** - Comfort level (Comfortable, Too cold, Too warm)
-- **Activity Type** - User activity (Relaxing, Working, Sleeping, etc.)
-- **Last Set Temperature** - Previous AC setting for context
-
-### **Output:**
-- **Optimal AC Set Temperature** - Predicted temperature setting in Celsius
-- **Energy Efficiency Score** - Estimated energy savings potential
-- **Comfort Prediction** - Expected user comfort level
-
----
-
 ## ⚙️ How It Works
 
 1. **Data Collection**: Retrieves real-time sensor data from Firebase database
@@ -73,49 +42,6 @@ This AI model serves as the intelligent core for automated temperature control, 
 5. **Temperature Optimization**: Generates optimal AC temperature recommendation
 6. **Firebase Update**: Writes prediction results back to database for system use
 7. **Continuous Loop**: Repeats process every 20 seconds for real-time optimization
-
----
-
-## 🚀 Quick Setup
-
-### **Prerequisites:**
-- Python 3.10 or higher
-- Firebase project with Realtime Database
-- OpenWeather API key (free tier available)
-- Internet connection for API calls
-
-### **Installation:**
-1. **Navigate to this folder**:
-   ```bash
-   cd ai_models/ac_temperature
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Configure environment variables**:
-   ```bash
-   # Copy template and edit with your credentials
-   cp .env.template .env
-   ```
-
-4. **Run the prediction system**:
-   ```bash
-   python main.py
-   ```
-
----
-
-## 📈 Performance Metrics
-
-* **Prediction Accuracy**: ±1°C from optimal temperature settings
-* **Energy Savings**: Up to 25% reduction in AC power consumption
-* **Response Time**: <3 seconds per prediction cycle
-* **User Satisfaction**: 90%+ comfort rating from user feedback
-* **Update Frequency**: Real-time predictions every 20 seconds
-* **Weather Integration**: 99%+ API uptime for reliable outdoor data
 
 ---
 
@@ -147,22 +73,6 @@ This temperature prediction system integrates with other components:
 
 ---
 
-## 📋 Configuration Options
-
-### **Prediction Parameters:**
-- Update interval (default: 20 seconds)
-- Temperature range limits (safety bounds)
-- User feedback weighting factors
-- Weather data refresh rates
-
-### **Model Settings:**
-- Prediction confidence thresholds
-- Energy efficiency vs comfort balance
-- Seasonal adjustment factors
-- Learning rate for user preferences
-
----
-
 ## 🤝 Contributing
 
 Contribute to the temperature prediction system development:
@@ -184,19 +94,6 @@ Contribute to the temperature prediction system development:
 🐍 **Python** – Comprehensive data science and ML ecosystem  
 📊 **Data Processing** – Pandas and NumPy for numerical analysis  
 🔐 **Security** – Environment-based configuration management
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [full repository](https://github.com/SahanUday/AI-Powered-AC-Temperature-Prediction-System) for details.
-
----
-
-## 🆘 Support
-
-- 🔗 **Full Documentation**: [Main Repository](https://github.com/SahanUday/AI-Powered-AC-Temperature-Prediction-System)
-- 📧 **Issues**: Report issues in the main project repository
 - 💬 **Discussions**: Join community for implementation help
 - 📚 **Guides**: Comprehensive setup guides in full repository
 
