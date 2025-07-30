@@ -143,89 +143,11 @@ Professional desktop application for advanced system management:
 
 ---
 
-## 🚀 Getting Started
+## 📚 Related Repositories
 
-### ✅ **Prerequisites**
-
-**Hardware Requirements:**
-- ESP32 development board (ESP32-DevKitC recommended)
-- ESP32-CAM module for occupancy detection
-- IR LED transmitter and status indicator LED
-- Stable Wi-Fi network connection
-
-**Software Requirements:**
-- [Arduino IDE](https://www.arduino.cc/en/software) (1.8.19+)
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) (3.0+)
-- [LabVIEW 2020+](https://www.ni.com/en-us/shop/labview.html)
-- Firebase project with Realtime Database enabled
-- OpenWeather API key for weather integration
-
-### 🔐 **Setup Instructions**
-
-**1. Clone the Repository:**
-```bash
-git clone https://github.com/SahanUday/Smart-AC-Control-System.git
-cd Smart-AC-Control-System
-```
-
-**2. Configure Firebase:**
-- Create a new Firebase project at [Firebase Console](https://console.firebase.google.com/)
-- Enable Realtime Database and Authentication
-- Download configuration files for each platform
-
-**3. ESP32 Firmware Setup:**
-```bash
-cd esp32_firmware
-cp config.h.template config.h
-# Edit config.h with your WiFi and Firebase credentials
-```
-
-**4. Mobile App Setup:**
-```bash
-cd mobile_app
-flutter pub get
-# Configure Firebase for Flutter following the official guide
-flutter run
-```
-
-**5. AI Models Setup:**
-```bash
-cd ai_models
-pip install -r requirements.txt
-# Configure Firebase credentials and OpenWeather API key
-python occupancy_detection.py
-python temperature_prediction.py
-```
-
----
-
-## 🎮 Control Modes
-
-### 🔹 **Basic Mode**
-Direct manual control via any interface with immediate command execution.
-
-### 🔹 **Scheduled Mode**
-Time-based automation with configurable delay periods for energy efficiency.
-
-### 🔹 **Occupancy Mode**
-Automatic AC control based on room presence detection using computer vision.
-
-### 🔹 **Smart Mode**
-AI-powered temperature optimization using environmental data and weather conditions.
-
-### 🔹 **Hybrid Modes**
-Combined Smart + Occupancy mode for maximum efficiency and comfort optimization.
-
----
-
-## 📊 Performance Metrics
-
-* **🎯 Occupancy Detection Accuracy**: 95%+ with low false positive rates
-* **⚡ Response Time**: <2 seconds for occupancy detection and AI predictions
-* **🔋 Energy Savings**: Up to 30% reduction in AC power consumption
-* **🌐 System Uptime**: 99.5% reliability with cloud-based backup
-* **📱 Mobile App Rating**: Smooth performance on Android 8.0+ devices
-* **🎛️ LabVIEW Interface**: Real-time data updates with <1 second latency
+- 🕵️‍♂️ **[AI-Powered Human Occupancy Detection](https://github.com/SahanUday/AI-powered-human-occupancy-detection-system)** - Complete occupancy detection system
+- 🌬️ **[AI-Powered AC Temperature Prediction](https://github.com/SahanUday/AI-Powered-AC-Temperature-Prediction-System)** - Temperature optimization AI
+- 📱 **[Airvix Mobile App](https://github.com/SahanUday/Airvix-App)** - Flutter-based mobile control application
 
 ---
 
@@ -252,21 +174,6 @@ We welcome contributions to enhance the Smart AC Control System! Here are ways y
 - 🌐 **Cross-Platform**: iOS app development and web interface
 - 🔋 **Power Optimization**: Battery operation and solar integration
 
-### 📝 **How to Contribute:**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📚 Related Repositories
-
-- 🕵️‍♂️ **[AI-Powered Human Occupancy Detection](https://github.com/SahanUday/AI-powered-human-occupancy-detection-system)** - Complete occupancy detection system
-- 🌬️ **[AI-Powered AC Temperature Prediction](https://github.com/SahanUday/AI-Powered-AC-Temperature-Prediction-System)** - Temperature optimization AI
-- 📱 **[Airvix Mobile App](https://github.com/SahanUday/Airvix-App)** - Flutter-based mobile control application
-
 ---
 
 ## 🛠️ Built With
@@ -284,15 +191,3 @@ We welcome contributions to enhance the Smart AC Control System! Here are ways y
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
-
-**Sahan Uday**  
-🔗 **GitHub**: [@SahanUday](https://github.com/SahanUday)  
-📧 **Contact**: For questions and collaboration opportunities
-
----
-
-**⭐ If you find this project helpful, please consider giving it a star!**
