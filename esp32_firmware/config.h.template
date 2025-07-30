@@ -1,0 +1,34 @@
+// =============================================================================
+// Configuration Template for ESP32 Smart AC Control System
+// =============================================================================
+// INSTRUCTIONS:
+// 1. Copy this file and rename it to "config.h"
+// 2. Replace all placeholder values with your actual credentials
+// 3. Never commit the actual "config.h" file to Git
+// =============================================================================
+
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// ===== Wi-Fi Configuration =====
+#define WIFI_SSID "YOUR_WIFI_NETWORK_NAME"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
+
+// ===== Firebase Configuration =====
+#define API_KEY "YOUR_FIREBASE_API_KEY"
+#define DATABASE_URL "YOUR_FIREBASE_DATABASE_URL"
+
+// ===== Firebase Authentication =====
+#define FIREBASE_USER_EMAIL "your_email@example.com"
+#define FIREBASE_USER_PASSWORD "your_firebase_password"
+
+// ===== Hardware Pin Configuration =====
+#define IR_LED_PIN 3
+#define LED_INDICATOR_PIN 2
+
+// ===== System Configuration =====
+#define SERIAL_BAUD_RATE 115200
+#define COMMAND_DELAY_MS 30000  // 30 seconds delay between commands
+#define POLL_INTERVAL_MS 1000   // Poll Firebase every 1 second
+
+#endif // CONFIG_H

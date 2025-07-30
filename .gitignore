@@ -1,0 +1,235 @@
+# =============================================================================
+# Smart AC Control System - Git Ignore File
+# =============================================================================
+
+# ===== SENSITIVE INFORMATION =====
+# Never commit sensitive credentials, API keys, or personal information
+**/credentials.json
+**/config.json
+**/.env
+**/.env.*
+**/secrets.*
+**/keys.*
+**/passwords.*
+**/auth.*
+
+# ESP32 specific sensitive files
+**/wifi_credentials.*
+**/firebase_config.*
+**/api_keys.*
+**/config.h
+
+# ===== ESP32 FIRMWARE =====
+# Arduino IDE and PlatformIO build files
+**/build/
+**/bin/
+**/obj/
+**/.pio/
+**/.pioenvs/
+**/.piolibdeps/
+**/lib_deps/
+
+# Arduino IDE specific
+**/*.hex
+**/*.elf
+**/*.map
+**/*.lst
+**/*.sym
+**/.arduino15/
+**/libraries/downloaded/
+
+# ESP32 specific
+**/bootloader.bin
+**/partitions.bin
+**/firmware.bin
+**/flash_args
+
+# ===== AI MODELS =====
+# Large model files and training data
+**/*.h5
+**/*.pkl
+**/*.joblib
+**/*.model
+**/*.weights
+**/*.pt
+**/*.pth
+**/*.onnx
+**/*.tflite
+**/*.pb
+
+# Training data and datasets
+**/datasets/
+**/training_data/
+**/test_data/
+**/raw_data/
+**/*.csv
+**/*.xlsx
+**/*.json
+**/*.hdf5
+
+# Model checkpoints and logs
+**/checkpoints/
+**/logs/
+**/tensorboard/
+**/wandb/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Python virtual environments
+**/venv/
+**/env/
+**/ENV/
+**/env.bak/
+**/venv.bak/
+**/.venv/
+
+# Jupyter Notebook
+**/.ipynb_checkpoints/
+**/*.ipynb
+
+# ===== LABVIEW =====
+# LabVIEW specific files
+**/*.aliases
+**/*.lvlps
+**/*.lvproj.user
+**/build/
+**/Builds/
+**/*.exe
+**/*.dll
+**/*.so
+**/*.dylib
+
+# LabVIEW temporary files
+**/temp/
+**/tmp/
+**/*.tmp
+**/*.temp
+
+# ===== MOBILE APP =====
+# Node.js dependencies
+**/node_modules/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.npm/
+**/.yarn/
+
+# React Native
+**/android/app/build/
+**/android/build/
+**/android/.gradle/
+**/android/local.properties
+**/android/keystore.properties
+**/android/app/release/
+**/ios/build/
+**/ios/Pods/
+**/ios/*.xcworkspace/xcuserdata/
+**/ios/*.xcodeproj/xcuserdata/
+
+# Flutter (if using Flutter)
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/build/
+**/android/app/src/main/res/drawable-*/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+
+# Expo
+**/.expo/
+**/dist/
+**/web-build/
+
+# ===== GENERAL DEVELOPMENT =====
+# IDE and Editor files
+**/.vscode/settings.json
+**/.vscode/launch.json
+**/.vscode/tasks.json
+**/.idea/
+**/*.swp
+**/*.swo
+**/*~
+**/.DS_Store
+**/Thumbs.db
+
+# Operating System files
+**/.DS_Store
+**/.DS_Store?
+**/._*
+**/.Spotlight-V100
+**/.Trashes
+**/ehthumbs.db
+**/Thumbs.db
+**/desktop.ini
+
+# Backup files
+**/*.bak
+**/*.backup
+**/*.old
+**/*.orig
+**/*.save
+
+# Log files
+**/*.log
+**/logs/
+**/crash.log
+**/error.log
+**/debug.log
+
+# Temporary files
+**/temp/
+**/tmp/
+**/*.tmp
+**/*.temp
+
+# Compressed files (usually large)
+**/*.zip
+**/*.tar
+**/*.tar.gz
+**/*.rar
+**/*.7z
+
+# Documentation build files
+**/docs/_build/
+**/site/
+
+# ===== PROJECT SPECIFIC =====
+# Large media files that shouldn't be in git
+**/*.mp4
+**/*.avi
+**/*.mov
+**/*.wav
+**/*.mp3
+**/*.jpg
+**/*.jpeg
+**/*.png
+**/*.gif
+**/*.bmp
+**/*.tiff
+# (Add exceptions for small icons/logos if needed)
+
+# Database files
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+
+# Test output
+**/test-results/
+**/coverage/
+**/.nyc_output/
+**/.coverage
+
+# ===== KEEP THESE PATTERNS COMMENTED FOR REFERENCE =====
+# Uncomment these if you want to exclude specific file types:
+# **/*.pdf
+# **/*.doc
+# **/*.docx
+# **/*.ppt
+# **/*.pptx
+
+# =============================================================================
+# END OF GITIGNORE
+# =============================================================================
