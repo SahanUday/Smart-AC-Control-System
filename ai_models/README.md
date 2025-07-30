@@ -46,21 +46,26 @@ These AI models form the intelligent core of the Smart AC Control System, enabli
 * **Firebase Admin SDK** – Real-time database integration
 * **ESP32-CAM** – Hardware for image capture and IoT connectivity
 
-### **System Architecture:**
-```
-┌─────────────────────┐    ┌─────────────────────┐    ┌─────────────────────┐
-│   ESP32-CAM Input   │───►│   Occupancy AI      │───►│   Firebase RTDB     │
-│                     │    │                     │    │                     │
-│ • Image Capture     │    │ • MobileNetV2       │    │ • Occupancy Status  │
-│ • Real-time Stream  │    │ • Binary Classify   │    │ • Real-time Sync    │
-└─────────────────────┘    └─────────────────────┘    └─────────────────────┘
-                                                              │
-┌─────────────────────┐    ┌─────────────────────┐           │
-│   Weather API       │───►│   Temperature AI    │◄──────────┘
-│                     │    │                     │
-│ • Outdoor Conditions│    │ • ML Prediction     │
-│ • Weather Data      │    │ • Optimize Settings │
-└─────────────────────┘    └─────────────────────┘
+## 🔍 System Architecture
+
+```mermaid
+graph TD
+    A[ESP32-CAM Input] --> B[Occupancy AI]
+    B --> C[Firebase RTDB]
+    D[Weather API] --> E[Temperature AI]
+    C --> E
+    
+    A1[• Image Capture<br/>• Real-time Stream] -.-> A
+    B1[• MobileNetV2<br/>• Binary Classify] -.-> B
+    C1[• Occupancy Status<br/>• Real-time Sync] -.-> C
+    D1[• Outdoor Conditions<br/>• Weather Data] -.-> D
+    E1[• ML Prediction<br/>• Optimize Settings] -.-> E
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#fff3e0
+    style D fill:#e8f5e8
+    style E fill:#fce4ec
 ```
 
 ---
