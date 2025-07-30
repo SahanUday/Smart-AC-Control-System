@@ -2,6 +2,9 @@
 
 This directory contains two intelligent AI-powered systems that work together to provide automated air conditioning control based on occupancy detection and temperature optimization. These models integrate seamlessly with the overall Smart AC Control System to deliver energy-efficient and comfort-focused climate management.
 
+- 🔗 **Human Occupancy Detection**: [Project Repository](https://github.com/SahanUday/AI-powered-human-occupancy-detection-system)
+- 🔗 **Temperature Prediction**: [Project Repository](https://github.com/SahanUday/AI-Powered-AC-Temperature-Prediction-System)
+
 ---
 
 ## 📌 Overview
@@ -36,16 +39,6 @@ These AI models form the intelligent core of the Smart AC Control System, enabli
 
 ---
 
-## 🔧 Technologies & Architecture
-
-### **Core Technologies:**
-* **Python 3.8+** – Primary development language for both AI systems
-* **TensorFlow/Keras** – Deep learning framework for computer vision
-* **OpenCV** – Image processing and computer vision operations
-* **Scikit-learn/Joblib** – Machine learning model deployment
-* **Firebase Admin SDK** – Real-time database integration
-* **ESP32-CAM** – Hardware for image capture and IoT connectivity
-
 ## 🔍 System Architecture
 
 ```mermaid
@@ -54,6 +47,7 @@ graph TD
     B --> C[Firebase RTDB]
     D[Weather API] --> E[Temperature AI]
     C --> E
+    E --> C
     
     A1[• Image Capture<br/>• Real-time Stream] -.-> A
     B1[• MobileNetV2<br/>• Binary Classify] -.-> B
@@ -67,64 +61,6 @@ graph TD
     style D fill:#e8f5e8
     style E fill:#fce4ec
 ```
-
----
-
-## 🚀 Quick Start Guide
-
-### **Prerequisites:**
-- Python 3.8+ installed on your system
-- Firebase project with Realtime Database enabled
-- ESP32-CAM module configured for image capture
-- OpenWeather API key for weather data
-
-### **Installation Steps:**
-
-**1. Navigate to AI Models Directory:**
-```bash
-cd ai_models
-```
-
-**2. Set Up Each AI System:**
-```bash
-# For Human Occupancy Detection
-cd human_detection
-# Follow setup instructions in the folder's README.md
-
-# For AC Temperature Prediction  
-cd ../ac_temperature
-# Follow setup instructions in the folder's README.md
-```
-
-**3. Configure Environment:**
-- Set up Firebase credentials for both systems
-- Configure ESP32-CAM IP addresses
-- Add OpenWeather API key for temperature prediction
-
-**4. Run AI Systems:**
-```bash
-# Start occupancy detection
-python human_detection/occupancy_detection.py
-
-# Start temperature prediction (in separate terminal)
-python ac_temperature/main.py
-```
-
----
-
-## 📊 Performance & Accuracy
-
-### **Human Occupancy Detection:**
-- **Model Accuracy**: 95%+ on test datasets
-- **Response Time**: <2 seconds per detection
-- **False Positive Rate**: <5%
-- **Detection Range**: Up to 5 meters from camera
-
-### **Temperature Prediction:**
-- **Prediction Accuracy**: ±1°C from optimal settings
-- **Energy Savings**: Up to 25% reduction in AC power consumption
-- **Comfort Score**: 90%+ user satisfaction ratings
-- **Update Frequency**: Every 20 seconds for real-time optimization
 
 ---
 
@@ -170,13 +106,6 @@ We welcome contributions to enhance the AI capabilities:
 - 📊 **Analytics**: Develop advanced performance monitoring and reporting
 - 🌐 **Scalability**: Support for multiple rooms and building-wide deployment
 
-### **Development Guidelines:**
-1. Follow established coding standards and documentation
-2. Test AI models thoroughly with diverse datasets
-3. Ensure compatibility with existing Firebase schema
-4. Submit detailed pull requests with performance metrics
-5. Consider energy efficiency and real-time performance impacts
-
 ---
 
 ## 🛠️ Built With
@@ -187,23 +116,3 @@ We welcome contributions to enhance the AI capabilities:
 🌐 **IoT Integration** – ESP32-CAM and sensor data processing  
 ☁️ **Weather APIs** – External data integration for optimization  
 🐍 **Python Ecosystem** – Comprehensive AI and data science libraries
-
----
-
-## 📄 License
-
-Both AI models are licensed under the **MIT License** - see the individual project repositories for detailed license information.
-
----
-
-## 🆘 Support & Resources
-
-- 📧 **Issues**: [Main Project Issues](https://github.com/SahanUday/Smart-AC-Control-System/issues)
-- 🔗 **Human Occupancy Detection**: [Project Repository](https://github.com/SahanUday/AI-powered-human-occupancy-detection-system)
-- 🔗 **Temperature Prediction**: [Project Repository](https://github.com/SahanUday/AI-Powered-AC-Temperature-Prediction-System)
-- 💬 **Discussions**: Join community discussions for AI development tips
-- 📚 **Documentation**: Comprehensive guides in individual project repositories
-
----
-
-**⭐ Star the individual repositories if you find the AI models helpful for your projects!**
